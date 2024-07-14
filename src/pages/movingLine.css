@@ -1,0 +1,21 @@
+.moving-line-container {
+    width: 100%; /* Full width of the viewport */
+    overflow: hidden; /* Prevents the moving element from being visible outside this container */
+    position: relative; /* Ensures the moving element is positioned relative to this container */
+  }
+  
+  .moving-line {
+    position: absolute;
+    left: 100%; /* Start off-screen to the right */
+    
+    animation: moveLine 20s linear infinite;
+  }
+  
+  @keyframes moveLine {
+    from {
+      transform: translateX(0); /* Starting position */
+    }
+    to {
+      transform: translateX(-100vw); /* Moves to the left by 100% of the viewport width */
+    }
+  }

@@ -1,0 +1,43 @@
+.fancy {
+    --offset: 4px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.fancy:hover::before { 
+    content: '';
+    background: conic-gradient(transparent 270deg, hsl(var(--primary)), transparent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate 2s linear forwards;
+    animation-iteration-count: 3;
+}
+
+.fancy:hover::after {
+    content: '';
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+        opacity: 0;
+    }
+}

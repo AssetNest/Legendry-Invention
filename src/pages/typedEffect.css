@@ -1,0 +1,20 @@
+.typed_out{
+    cursor: default;
+    overflow: hidden;
+    border-right: .1em solid hsl(var(--secondary));
+    white-space: nowrap;
+    animation: 
+      typing 1.2s steps(24, end) forwards,
+      blink .8s infinite;
+    animation-delay: 500ms;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: hsl(var(--secondary)); }
+}
