@@ -1,0 +1,25 @@
+/* Add this to your CSS file */
+.glow-bottom-border:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2.5px; /* Thickness of the bottom border */
+    background: linear-gradient(90deg, rgba(0,204,168,0.7), rgba(0,204,168,1), rgba(0,204,168,0.7));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0px 10px rgba(0,204,168,1); /* Larger blur radius for more dispersion */
+}
+
+/* Add this to your CSS file */
+.glow-bottom-border-fixed::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2.5px; /* Thickness of the bottom border */
+    background: linear-gradient(90deg, rgba(0, 139, 204, 0.7), rgb(0, 204, 204), rgba(0, 201, 204, 0.7));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0px 10px rgba(0,204,168,1); /* Larger blur radius for more dispersion */
+}
