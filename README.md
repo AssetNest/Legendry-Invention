@@ -43,3 +43,8 @@ AssetNest is a decentralized platform designed to bridge the gap between profess
 - Transaction Fees: Implement a small fee on each investment and withdrawal transaction processed through the platform.
 - Subscription Fees: Offer premium features or advanced analytics tools through a subscription-based model for traders and investors.
 - Advertising and Sponsorship: Allow relevant financial services and crypto projects to advertise on the platform or sponsor certain features/events.
+
+Created by
+- Maroti Patre
+- Swayaam Sharma
+- Amaan Sayyad
